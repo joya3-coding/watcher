@@ -929,6 +929,14 @@ footer #company {
   #main_screen #inner_box .first_p {
     font-size:20px;
   }
+  
+  #about_inner {
+    width:100%;
+  }
+
+  #register_inner {
+    width:100%;
+  }
 
   footer {
     height:70px;
