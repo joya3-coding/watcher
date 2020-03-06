@@ -34,6 +34,8 @@ html {
   -ms-text-size-adjust: 100%; /* 5 */
   -webkit-text-size-adjust: 100%; /* 5 */
   word-break: break-word; /* 6 */
+
+  overflow-x:hidden;
 }
 
 /* Sections
@@ -46,6 +48,10 @@ html {
 body {
   margin: 0;
   background: url(pill.png) no-repeat;
+  overflow-x:hidden; 
+}
+
+body.modal-open {
   overflow-x:hidden;
 }
 
@@ -929,9 +935,13 @@ footer #company {
   #main_screen #inner_box .first_p {
     font-size:20px;
   }
-  
+
   #about_inner {
     width:100%;
+  }
+
+  #about_right {
+    display:none;
   }
 
   #register_inner {
