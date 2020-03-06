@@ -48,7 +48,8 @@ html {
 body {
   margin: 0;
   background: url(pill.png) no-repeat;
-  overflow-x:hidden; 
+  overflow-x:hidden;
+  font-family: 'Noto Serif JP', serif;
 }
 
 body.modal-open {
@@ -849,7 +850,7 @@ footer #copyright {
 }
 
 footer div {
-  margin:102px 8px 0 8px;
+  margin:102px 8px 0 3px;
 }
 
 footer div ul {
@@ -859,7 +860,7 @@ footer div ul {
 
 footer div label {
   color:#fff;
-  font-size:34px;
+  font-size:29px;
   margin-left:40px;
 
 }
@@ -868,42 +869,38 @@ footer li {
   color:#fff;
   font-size:17px;
   line-height:48px;
-  margin-left:30px;
-  width:190px;
+  margin-left:2px;
 }
 
 footer #logo {
   float:left;
 
   height:240px;
-  widtH:210px;
+  width:21%;
 }
 
 footer #links1 {
   float:left;
 
   height:300px;
-  width:192px;
+  width:23%;
 }
 
 footer #links2 {
   float:left;
 
   height:300px;
-  width:190px;
+  width:19%;
   margin-right:5px;
-}
-
-footer #links2 label {
-  padding:18px;
 }
 
 footer #company {
   float:left;
 
   height:480px;
-  width:240px;
+  width:28%;
 }
+
 
 @media screen and (max-width:939px) {
   #header h2 {
@@ -911,7 +908,53 @@ footer #company {
   }
   #header_inner ul {
     display:none;
+  }
 
+  footer {
+    height:990px;
+  }
+
+  #footer_top {
+    width:720px;
+    margin:0 auto;
+    height:320px;
+  }
+
+  footer #logo {
+    widtH:45%;
+
+  }
+
+  footer #links1 {
+    widtH:45%;
+
+  }
+
+  #footer_bottom {
+    width:720px;
+    margin:0 auto;
+    height:320px;
+  }
+
+  footer #links2 {
+    widtH:45%;
+
+  }
+
+  footer #company {
+    widtH:45%;
+
+  }
+}
+
+@media screen and (max-width:720px) {
+  footer {
+    height:70px;
+    font-size:11px;
+  }
+
+  #footer_inner {
+    display:none;
   }
 }
 
@@ -926,6 +969,7 @@ footer #company {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    border-radius:0;
   }
 
   #main_screen #inner_box h2 {
@@ -948,12 +992,5 @@ footer #company {
     width:100%;
   }
 
-  footer {
-    height:70px;
-    font-size:11px;
-  }
 
-  #footer_inner {
-    display:none;
-  }
 }
