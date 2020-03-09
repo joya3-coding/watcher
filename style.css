@@ -821,6 +821,12 @@ textarea,
 
 }
 
+#olympic .more {
+  float:right;
+  margin-top:-10px;
+  margin-right:40px;
+}
+
 
 #olympic h3 {
   display:block;
@@ -1093,7 +1099,7 @@ footer a {
 
 
   #register {
-    height:1000px;
+    height:960px;
   }
 
   #register_inner {
@@ -1227,15 +1233,6 @@ footer a {
   }
 
 
-
-
-
-
-
-
-
-
-
   #last_reg {
     height:295px;
   }
@@ -1257,5 +1254,62 @@ footer a {
     bottom:16px;
     right:10px;
     transition:0.3s;
+  }
+}
+
+@media screen and (max-width:470px) {
+  #about h3{
+    font-size:30px;
+  }
+
+  #about p {
+    font-size:16px;
+  }
+
+  #register h3{
+    font-size:30px;
+  }
+
+  #register p {
+    font-size:15px;
+
+  }
+
+  #olympic {
+    height:1840px;
+  }
+
+  #olympic h3 {
+    font-size:22px;
+  }
+
+  #olympic .item {
+    width:92%;
+    margin:0 auto 60px auto;
+    height:500px;
+  }
+
+
+  #olympic .item dd .main {
+    width:86%;
+  }
+
+
+  #last_reg h3 {
+    font-size:24px;
+
+  }
+
+  #last_reg p {
+    font-size:18px;
+  }
+
+  #last_reg h3 {
+    padding-top:54px;
+  }
+
+  #last_reg {
+    width:100%;
+    height:240px;
   }
 }
