@@ -573,14 +573,18 @@ textarea,
    clear: both;
 }
 
+
+/************************
+        ここから
+************************/
+
 #header {
   position:fixed;
   top:0;
-  background-color:rgba(0,0,0,0.978);
+  background-color:rgba(0,0,0,0.99);
   width:100%;
   height:70px;
   z-index:1000;
-
 }
 
 #header_inner {
@@ -636,6 +640,7 @@ textarea,
   width:100%;
   height:780px;
   background: no-repeat center url("img/main.jpg");
+
 }
 
 #main_screen #inner_box {
@@ -707,7 +712,7 @@ textarea,
 
 
 #about {
-
+  padding-left:32px;
   height:630px;
   background-color:rgba(0,0,0,0.9);
 }
@@ -715,7 +720,6 @@ textarea,
 #about #about_inner {
   width:940px;
   margin:0 auto;
-
 }
 
 #about #about_inner #about_left {
@@ -762,6 +766,7 @@ textarea,
 
 #register_left {
   display:inline-block;
+  padding-left:8px;
 }
 
 #register_left img{
@@ -772,7 +777,7 @@ textarea,
 
 #register_right {
   float:right;
-  width:590px;
+  width:570px;
 }
 
 #register h3{
@@ -787,6 +792,18 @@ textarea,
   letter-spacing:3px;
   font-weight:bold;
   color:#000;
+
+}
+
+
+
+#register_right img {
+  width:300px;
+  height:450px;
+}
+
+#smartphone {
+  display:none;
 }
 
 #lol {
@@ -798,8 +815,126 @@ textarea,
 #olympic {
   widtH:100%;
   height:640px;
-  background-color:#f0f0f0;
+  background-color:#e8e8e8;
+  padding-top:30px;
+  border-bottom: 1px dotted #666;
+
 }
+
+
+#olympic h3 {
+  display:block;
+  text-align:center;
+  font-size:28px;
+  font-weight:bold;
+  margin-bottom:40px;
+}
+
+#olympic dl {
+  margin-top:0;
+}
+
+#olympic dl dt {
+  height:40px;
+}
+
+#olympic_items {
+  display:flex;
+  justify-content:center;
+}
+
+
+
+#olympic .item {
+  border:1px solid #666;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+  width:340px;
+  height:430px;
+  margin:0 16px;
+  border-radius:4px;
+}
+
+#olympic .item dt {
+  font-size:16px;
+  line-height:10px;
+}
+
+#olympic .item dt #date {
+  font-size:11px;
+  color:#666;
+  margin-left:18px;
+}
+
+#olympic .item dt #text{
+  width:100%;
+  text-align:center;
+}
+
+
+
+#olympic .item dd .main {
+  width:86%;
+  text-align:center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+#olympic .item dd p {
+  font-size:14px;
+
+}
+
+#last_reg h3 {
+  color:#fff;
+  display:block;
+  text-align:center;
+  font-size:32px;
+  padding-top:88px;
+  margin-bottom:54px;
+  margin-top:0;
+}
+
+#last_reg p {
+  color:#fff;
+  font-size:26px;
+  text-align:center;
+}
+
+#last_reg {
+  width:100%;
+  height:350px;
+  background-image:url('img/1-1.jpg');
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position:center;
+  background-color:rgba(0,0,0,0.78);
+  background-blend-mode:soft-light;
+}
+
+#last_reg .new {
+  display:block;
+  width:200px;
+  margin:0 auto;
+  border-radius:8px;
+  background-color:#ff9c12;
+  padding:10px 3px;
+  box-shadow:0 5px #8a5a16;
+  font-weight:bold;
+}
+
+#last_reg .new:active {
+  box-shadow:none;
+  position:relative;
+  top:5px;
+}
+
+#last_reg a{
+  text-decoration:none;
+
+}
+
 
 #return_btn {
   position:fixed;
@@ -839,7 +974,7 @@ footer {
 footer #copyright {
   color:#fff;
   position:absolute;
-  bottom:5px;
+  bottom:8px;
   left:50%;
   transform: translate(-50%,0);
 }
@@ -849,7 +984,7 @@ footer #copyright {
   margin:0 auto;
 }
 
-footer div {
+footer #logo,#links1,#links2,#company {
   margin:102px 8px 0 3px;
 }
 
@@ -901,13 +1036,103 @@ footer #company {
   width:28%;
 }
 
+footer a {
+  text-decoration:none;
+  color:#fff;
+}
+
+
 
 @media screen and (max-width:939px) {
+  #header_inner h2{
+    margin-left:16px;
+  }
+
   #header h2 {
     margin-top:9px;
   }
+
   #header_inner ul {
     display:none;
+  }
+
+  #about {
+    height:970px;
+    padding:0;
+
+  }
+
+  #about h3 {
+    padding-top:70px;
+  }
+
+  #about #about_inner {
+    margin:0 auto;
+    width:90%;
+  }
+
+  #about #about_inner #about_left {
+    width:100%;
+    text-align:center;
+    padding-bottom:70px;
+  }
+
+
+
+  #about #about_inner #about_right {
+    width:100%;
+    text-align:center;
+  }
+
+  #about_right img {
+    margin-top:0;
+    width:300px;
+    height:450px;
+  }
+
+
+
+  #register {
+    height:1000px;
+  }
+
+  #register_inner {
+    width:90%;
+  }
+
+  #register_right {
+    width:100%;
+    margin:0 auto;
+
+    text-align:center;
+  }
+
+  #register_left img{
+    display:none;
+
+  }
+
+  #register h3 {
+    margin-top:0px;
+    padding-top:100px;
+  }
+
+  #last {
+    margin-bottom:70px;
+  }
+
+  #smartphone {
+    display:inline-block;
+    border-radius:15px;
+    box-shadow:6px 6px 6px rgba(0,0,0,0.5);
+  }
+
+  #olympic .item dd .main {
+    width:86%;
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
   }
 
   footer {
@@ -917,11 +1142,11 @@ footer #company {
   #footer_top {
     width:720px;
     margin:0 auto;
-    height:320px;
+    height:300px;
   }
 
   footer #logo {
-    widtH:45%;
+    widtH:42%;
 
   }
 
@@ -933,11 +1158,11 @@ footer #company {
   #footer_bottom {
     width:720px;
     margin:0 auto;
-    height:320px;
+    height:300px;
   }
 
   footer #links2 {
-    widtH:45%;
+    widtH:42%;
 
   }
 
@@ -945,9 +1170,26 @@ footer #company {
     widtH:45%;
 
   }
+
+  #olympic {
+    height:1970px;
+  }
+
+  #olympic_items {
+    flex-direction: column;
+
+  }
+
+  #olympic .item {
+    width:470px;
+    height:540px;
+    margin:0 auto 65px auto;
+  }
+
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:730px) {
+
   footer {
     height:70px;
     font-size:11px;
@@ -956,17 +1198,21 @@ footer #company {
   #footer_inner {
     display:none;
   }
+
+
 }
 
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:670px) {
+
+
   #main_screen {
     height:625px;
   }
 
   #main_screen #inner_box {
     width:100%;
-    top:50%;
+    top:49%;
     left:50%;
     transform: translate(-50%, -50%);
     border-radius:0;
@@ -980,17 +1226,36 @@ footer #company {
     font-size:20px;
   }
 
-  #about_inner {
-    width:100%;
+
+
+
+
+
+
+
+
+
+
+  #last_reg {
+    height:295px;
   }
 
-  #about_right {
-    display:none;
+  #last_reg h3{
+    padding-top:65px;
+    margin-bottom:44px;
   }
 
-  #register_inner {
-    width:100%;
+  #return_btn {
+    bottom:20px;
+    right:15px;
   }
 
-
+  #return_btn:hover {
+    widtH:60px;
+    height:60px;
+    line-height:60px;
+    bottom:16px;
+    right:10px;
+    transition:0.3s;
+  }
 }
